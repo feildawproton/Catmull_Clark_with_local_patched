@@ -1,5 +1,5 @@
 # Catmull_Clark_with_local_patches
-Another old school project.  This one tests how memory optimization could affect Catmull-Clark algorithm
+Another old school project (MSIM 715).  This one tests how memory optimization could affect Catmull-Clark algorithm
 
 # Catmull-Clark with CUDA and openMP
 
