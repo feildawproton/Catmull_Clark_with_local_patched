@@ -118,6 +118,23 @@ Another old school project.  This one tests how memory optimization could affect
   - The effect we see here is just from the GPU
 ![image](https://user-images.githubusercontent.com/56926839/162260634-a219b1e4-3a03-4718-a0be-0fe769a27b2a.png)
 
+## Analysis
+- Results scaled with thread count on the largest mesh that didn’t fail
+  - The CPU threads were thus keeping the GPU Streaming Multiprocessors busy
+- Results did not scale with block size
+  - This is perhaps because the algorithm couldn’t benefit from the shared memory
+- Results of optimization were promising
+  - The tested irregular mesh was just irregular with the patch
+  - Perhaps results would be more striking otherwise
+
+## Future (perhaps not...)
+- I’d like to combine this with an actual graphics application
+- Combine with tesselation
+- Explore use with progressive collision detection
+
+
+
+
 
 
 
